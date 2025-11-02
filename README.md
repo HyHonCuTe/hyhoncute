@@ -47,20 +47,6 @@ Dưới đây là một số dự án mình đã làm (link tới GitHub nếu c
 
 ---
 
-## Xem portfolio / Chạy local
-
-- Cách nhanh nhất: mở file `index.html` trong trình duyệt (double-click) để xem portfolio cá nhân.
-- Hoặc chạy web server đơn giản (PowerShell):
-
-```powershell
-# 1) Dùng Python (nếu đã cài):
-python -m http.server 8000
-# rồi mở http://localhost:8000
-
-# 2) Dùng serve (node) nếu có cài:
-npx serve .
-```
-
 ---
 
 ## Liên hệ
