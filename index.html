@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Võ Đào Huy Hoàng - Full-stack Developer & DevOps Engineer Portfolio">
+    <meta name="author" content="HyHonCuTe">
+    <meta name="keywords" content="developer, devops, ansible, automation, portfolio, CV">
+    <title>Võ Đào Huy Hoàng (HyHonCuTe) - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=M+PLUS+Rounded+1c:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            /* Japanese Anime Pink Theme */
+            --sakura-pink: #FFB7C5;
+            --anime-pink: #FF69B4;
+            --hot-pink: #FF1493;
+            --cherry-blossom: #FFEBEE;
+            --pastel-pink: #FFC0CB;
+            --light-pink: #FFE4E1;
+            --dark-pink: #C71585;
+            --purple-accent: #DA70D6;
+            --white: #FFFFFF;
+            --black: #2C2C2C;
+            --gray: #757575;
+            --light-gray: #F5F5F5;
+            
+            /* Gradients */
+            --gradient-main: linear-gradient(135deg, #FFB7C5 0%, #FF69B4 50%, #DA70D6 100%);
+            --gradient-soft: linear-gradient(135deg, #FFE4E1 0%, #FFB7C5 100%);
+            --gradient-card: linear-gradient(135deg, #FFFFFF 0%, #FFE4E1 100%);
+            
+            /* Shadows */
+            --shadow-soft: 0 4px 20px rgba(255, 105, 180, 0.15);
+            --shadow-medium: 0 8px 30px rgba(255, 105, 180, 0.25);
+            --shadow-strong: 0 12px 40px rgba(255, 105, 180, 0.35);
+        }
+        
+        body {
+            font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+            background: var(--light-pink);
+            color: var(--black);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        
+        /* Animated Background */
+        .sakura-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background: var(--gradient-soft);
+            overflow: hidden;
+        }
+        
+        .sakura-petal {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--sakura-pink);
+            border-radius: 50% 0 50% 0;
+            opacity: 0.6;
+            animation: fall linear infinite;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-soft);
+            border-bottom: 3px solid var(--sakura-pink);
+        }
+        
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--gradient-main);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-avatar {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: var(--gradient-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-strong);
+            animation: float 3s ease-in-out infinite;
+            border: 5px solid white;
+        }
+        
+        .hero-avatar i {
+            font-size: 5em;
+            color: white;
+        }
+
+        /* Make avatar image fill the circular frame and be clipped */
+        .hero-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 50%;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.5em;
+            color: var(--hot-pink);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .hero .tagline {
+            font-size: 1.1em;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .social-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--hot-pink);
+            font-size: 1.5em;
+            text-decoration: none;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: var(--shadow-strong);
+            background: var(--gradient-main);
+            color: white;
+        }
+        
+        /* Section */
+        section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 30px;
+        }
+        
+        .section-title {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            background: var(--gradient-main);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: var(--gradient-main);
+            margin: 20px auto 0;
+            border-radius: 10px;
+        }
+        
+        /* About Section */
+        .about-content {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: var(--shadow-medium);
+            border: 3px solid var(--sakura-pink);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .about-item {
+            text-align: center;
+            padding: 30px;
+            background: var(--gradient-card);
+            border-radius: 20px;
+            border: 2px solid var(--sakura-pink);
+            transition: all 0.3s ease;
+        }
+        
+        .about-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .about-item i {
+            font-size: 3em;
+            color: var(--hot-pink);
+            margin-bottom: 15px;
+        }
+        
+        .about-item h3 {
+            font-size: 1.3em;
+            color: var(--hot-pink);
+            margin-bottom: 10px;
+        }
+        
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        
+        .skill-card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-soft);
+            border: 2px solid var(--sakura-pink);
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-10px) rotate(2deg);
+            box-shadow: var(--shadow-strong);
+            border-color: var(--hot-pink);
+        }
+        
+        .skill-card i {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .skill-card.html i { color: #E34F26; }
+        .skill-card.css i { color: #1572B6; }
+        .skill-card.js i { color: #F7DF1E; }
+        .skill-card.csharp i { color: #239120; }
+        .skill-card.python i { color: #3776AB; }
+        .skill-card.java i { color: #007396; }
+        .skill-card.dart i { color: #0175C2; }
+        .skill-card.cpp i { color: #00599C; }
+        .skill-card.ansible i { color: #EE0000; }
+        
+        .skill-card h4 {
+            font-size: 1.1em;
+            color: var(--black);
+        }
+        
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: var(--shadow-medium);
+            border: 3px solid var(--sakura-pink);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-main);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-strong);
+            border-color: var(--hot-pink);
+        }
+        
+        .project-header {
+            background: var(--gradient-soft);
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .project-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .project-icon i {
+            font-size: 2.5em;
+            color: var(--hot-pink);
+        }
+        
+        .project-header h3 {
+            font-size: 1.5em;
+            color: var(--hot-pink);
+            margin-bottom: 10px;
+        }
+        
+        .project-id {
+            font-size: 0.8em;
+            color: var(--gray);
+            font-family: 'Courier New', monospace;
+        }
+        
+        .project-body {
+            padding: 25px;
+        }
+        
+        .project-description {
+            color: var(--gray);
+            margin-bottom: 20px;
+            min-height: 60px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            padding: 5px 15px;
+            background: var(--gradient-soft);
+            border-radius: 20px;
+            font-size: 0.85em;
+            color: var(--hot-pink);
+            font-weight: 500;
+        }
+        
+        .project-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--gradient-main);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .project-link:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            background: white;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: var(--shadow-strong);
+            border: 3px solid var(--sakura-pink);
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-item {
+            padding: 30px;
+            background: var(--gradient-card);
+            border-radius: 20px;
+            border: 2px solid var(--sakura-pink);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .contact-item i {
+            font-size: 2.5em;
+            color: var(--hot-pink);
+            margin-bottom: 15px;
+        }
+        
+        .contact-item h4 {
+            color: var(--hot-pink);
+            margin-bottom: 10px;
+        }
+        
+        .contact-item a {
+            color: var(--gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: var(--hot-pink);
+        }
+        
+        /* Footer */
+        footer {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 3px solid var(--sakura-pink);
+            margin-top: 80px;
+        }
+        
+        footer p {
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+        
+        .footer-heart {
+            color: var(--hot-pink);
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            10%, 30% { transform: scale(1.2); }
+            20%, 40% { transform: scale(1); }
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-main);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5em;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-strong);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .scroll-top.visible {
+            display: flex;
+        }
+        
+        .scroll-top:hover {
+            transform: translateY(-5px) scale(1.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: var(--gradient-main);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-medium);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-content,
+            .contact-content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sakura Background -->
+    <div class="sakura-bg" id="sakuraBg"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>HyHonCuTe</span>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/287716288_1493364071082242_7615443866586884756_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Zd0xxJQ03I0Q7kNvwE7VY4c&_nc_oc=AdlBBQCOZAks_i3hcEEaHemBD_NqERFmcCjsObSmO9VSWdm2A8BRChPqaqem4v1eeqU&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=WmGFwQvArWEt59Nz2yDaSQ&oh=00_Afi-nQBCbhxK6w142MCb7inzeqrk-iLkKgIPcqIJcg-Xxg&oe=690D6128" alt="Avatar">
+            </div>
+            <h1>Võ Đào Huy Hoàng</h1>
+            <p class="subtitle">HyHonCuTe</p>
+            <p class="tagline">Full-stack Developer • DevOps Engineer • Automation Enthusiast</p>
+            
+            <div class="social-links">
+                <a href="https://github.com/HyHonCuTe" target="_blank" class="social-btn" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:contact@hyhoncute.com" class="social-btn" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/hyhoncute" target="_blank" class="social-btn" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://t.me/hyhoncute" target="_blank" class="social-btn" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">
+            <i class="fas fa-user-circle"></i> About Me
+        </h2>
+        <div class="about-content">
+            <p style="text-align: center; font-size: 1.2em; color: var(--gray); margin-bottom: 30px;">
+                👋 Xin chào! Tôi là <strong style="color: var(--hot-pink);">Võ Đào Huy Hoàng</strong>, một developer đam mê công nghệ,<br>
+                chuyên về <strong>automation</strong>, <strong>DevOps</strong>, và <strong>full-stack development</strong>.
+            </p>
+            
+            <div class="about-grid">
+                <div class="about-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-code"></i>
+                    <h3>Experience</h3>
+                    <p>Full-stack Development<br>DevOps & Automation</p>
+                </div>
+                <div class="about-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>Interests</h3>
+                    <p>IoT, Mobile Apps<br>Security & Monitoring</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">
+            <i class="fas fa-tools"></i> Technical Skills
+        </h2>
+        <div class="skills-grid">
+            <div class="skill-card html">
+                <i class="fab fa-html5"></i>
+                <h4>HTML</h4>
+            </div>
+            <div class="skill-card css">
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS</h4>
+            </div>
+            <div class="skill-card js">
+                <i class="fab fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card csharp">
+                <i class="fas fa-hashtag"></i>
+                <h4>C#</h4>
+            </div>
+            <div class="skill-card python">
+                <i class="fab fa-python"></i>
+                <h4>Python</h4>
+            </div>
+            <div class="skill-card java">
+                <i class="fab fa-java"></i>
+                <h4>Java</h4>
+            </div>
+            <div class="skill-card dart">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Dart/Flutter</h4>
+            </div>
+            <div class="skill-card cpp">
+                <i class="fas fa-microchip"></i>
+                <h4>C++</h4>
+            </div>
+            <div class="skill-card ansible">
+                <i class="fas fa-robot"></i>
+                <h4>Ansible</h4>
+            </div>
+            <div class="skill-card php">
+                <i class="fab fa-php"></i>
+                <h4>PHP</h4>
+            </div>
+            <div class="skill-card iot">
+                <i class="fas fa-network-wired"></i>
+                <h4>IoT</h4>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">
+            <i class="fas fa-rocket"></i> My Projects
+        </h2>
+        <div class="projects-grid">
+            <!-- Ansible Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Ansible Automation</h3>
+                    <p class="project-id">ID: 963394560</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Complete infrastructure automation & security monitoring stack với Ansible roles. 
+                        Bao gồm OpenSCAP, OpenVAS, Zabbix, Prometheus, Grafana, Wazuh.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 99.4%</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">DevOps</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/ansible" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Standee Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Standee</h3>
+                    <p class="project-id">ID: 1071942666</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        E-commerce platform cho sản phẩm standee. 
+                        Full-stack application với web, mobile và backend API.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 39.6%</span>
+                        <span class="tech-tag">C# 24.1%</span>
+                        <span class="tech-tag">JavaScript 15.5%</span>
+                        <span class="tech-tag">Dart 13.8%</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/Standee" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Web Project -->
+            <!-- <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web</h3>
+                    <p class="project-id">ID: 953946092</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Web application với tích hợp machine learning. 
+                        Sử dụng Jupyter Notebook cho data analysis và visualization.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 56.6%</span>
+                        <span class="tech-tag">C# 31.6%</span>
+                        <span class="tech-tag">Jupyter 8.7%</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/Web" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div> -->
+            
+            <!-- Car ESP32 Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Car ESP32</h3>
+                    <p class="project-id">ID: 1034319519</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        IoT smart car project với ESP32 microcontroller. 
+                        Mobile app control sử dụng Flutter và real-time communication.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Dart 77.1%</span>
+                        <span class="tech-tag">C++ 22.4%</span>
+                        <span class="tech-tag">IoT</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/Car_esp32" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Parking Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Parking AI</h3>
+                    <p class="project-id">ID: 965985049</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Smart parking system với AI/ML. 
+                        Computer vision để detect và track available parking spots.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Jupyter 98.1%</span>
+                        <span class="tech-tag">Python 1.9%</span>
+                        <span class="tech-tag">AI/ML</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/Parking" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- NFC Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>NFC App</h3>
+                    <p class="project-id">ID: 900377803</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        NFC reader/writer mobile application. 
+                        Flutter app với native NFC integration cho Android và iOS.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Dart 95.6%</span>
+                        <span class="tech-tag">Swift 1.4%</span>
+                        <span class="tech-tag">Mobile</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/NFC" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Flash ESP Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Flash ESP</h3>
+                    <p class="project-id">ID: 1086580790</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        ESP32/ESP8266 firmware flasher tool. 
+                        Web-based interface để flash firmware lên ESP devices.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 51.1%</span>
+                        <span class="tech-tag">JavaScript 40.4%</span>
+                        <span class="tech-tag">CSS 8.5%</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/Flash_esp" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Gia Pha Project -->
+            <!-- <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>GiaPha</h3>
+                    <p class="project-id">ID: 1013083405</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Family tree management system. 
+                        Web application để quản lý và hiển thị gia phả gia đình.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 100%</span>
+                        <span class="tech-tag">Family Tree</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/GiaPha" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div> -->
+            
+            <!-- Ansible Cisco Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Ansible Cisco</h3>
+                    <p class="project-id">ID: 1009564623</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Cisco network device automation với Ansible. 
+                        Jinja templates cho network configuration management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Jinja 100%</span>
+                        <span class="tech-tag">Network</span>
+                        <span class="tech-tag">Cisco</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/ansible-cisco" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+            
+            <!-- DACN Tutorial Project -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Tutorial Ansible</h3>
+                    <p class="project-id">ID: 1079198160</p>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Tutorial documentation cho đồ án chuyên ngành. 
+                        Step-by-step guides và technical documentation.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML 100%</span>
+                        <span class="tech-tag">Tutorial</span>
+                        <span class="tech-tag">Docs</span>
+                    </div>
+                    <a href="https://github.com/HyHonCuTe/dacn_tutorial" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">
+            <i class="fas fa-envelope"></i> Get In Touch
+        </h2>
+        <div class="contact-content">
+            <p style="font-size: 1.2em; color: var(--gray); margin-bottom: 30px;">
+                💌 Hãy liên hệ với tôi qua các kênh sau!<br>
+                Tôi luôn sẵn sàng hợp tác và kết nối.
+            </p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/HyHonCuTe" target="_blank">@HyHonCuTe</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:contact@hyhoncute.com">vodaohuyhoang@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <h4>LinkedIn</h4>
+                    <a href="https://linkedin.com/in/hyhoncute" target="_blank">HyHonCuTe</a>
+                </div>               
+                 <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:+84969913372">+84 969 913 372</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Võ Đào Huy Hoàng (HyHonCuTe)</p>
+        <p>Made with <span class="footer-heart">❤️</span> and lots of <i class="fas fa-coffee" style="color: var(--hot-pink);"></i></p>
+        <p style="font-size: 0.9em; margin-top: 15px;">
+            <i class="fas fa-code"></i> Built with HTML, CSS & JavaScript • 
+            Inspired by Japanese Anime Aesthetics 🌸
+        </p>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script>
+        // Generate Sakura Petals
+        function createSakuraPetals() {
+            const bg = document.getElementById('sakuraBg');
+            const petalCount = 30;
+            
+            for (let i = 0; i < petalCount; i++) {
+                const petal = document.createElement('div');
+                petal.className = 'sakura-petal';
+                petal.style.left = Math.random() * 100 + '%';
+                petal.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                petal.style.animationDelay = Math.random() * 5 + 's';
+                petal.style.width = (Math.random() * 10 + 15) + 'px';
+                petal.style.height = petal.style.width;
+                bg.appendChild(petal);
+            }
+        }
+        
+        // Scroll to Top Button
+        window.addEventListener('scroll', () => {
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Smooth Scroll for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+        
+        // Initialize
+        createSakuraPetals();
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.project-card, .skill-card, .about-item, .contact-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
