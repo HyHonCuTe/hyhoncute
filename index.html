@@ -50,16 +50,19 @@
             </button>
             
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/experience.html">Experience</a></li>
-                <li><a href="pages/roadmap.html">Roadmap</a></li>
-                <li><a href="pages/services.html">Services</a></li>
-                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+                <li><a href="pages/about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="pages/projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="pages/experience.html" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="pages/roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+                <li><a href="pages/services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="pages/contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
             
             <div class="nav-actions">
+                <button class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -76,12 +79,12 @@
             
             <div class="hero-badge">
                 <span class="dot"></span>
-                <span>Available for opportunities</span>
+                <span data-i18n="hero.badge">Available for opportunities</span>
             </div>
             
             <h1>Võ Đào Huy Hoàng</h1>
-            <p class="title">System / Network / Security Engineer</p>
-            <p class="subtitle">
+            <p class="title" data-i18n="hero.title">System / Network / Security Engineer</p>
+            <p class="subtitle" data-i18n="hero.subtitle">
                 Sinh viên An ninh mạng với kinh nghiệm triển khai Hybrid Infrastructure, 
                 Automation với Ansible, và Network Security. Đam mê xây dựng hệ thống 
                 ổn định, bảo mật và tự động hóa cao.
@@ -90,31 +93,31 @@
             <div class="hero-stats">
                 <div class="stat-item">
                     <div class="stat-value" data-counter="10">10+</div>
-                    <div class="stat-label">Projects</div>
+                    <div class="stat-label" data-i18n="hero.stats.projects">Projects</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">3.67</div>
-                    <div class="stat-label">GPA</div>
+                    <div class="stat-label" data-i18n="hero.stats.gpa">GPA</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value" data-counter="4">4</div>
-                    <div class="stat-label">Awards</div>
+                    <div class="stat-label" data-i18n="hero.stats.awards">Awards</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">1+</div>
-                    <div class="stat-label">Years Exp</div>
+                    <div class="stat-label" data-i18n="hero.stats.yearsExp">Years Exp</div>
                 </div>
             </div>
             
             <div class="hero-buttons">
                 <a href="pages/projects.html" class="btn btn-primary btn-lg">
-                    <i class="fas fa-folder-open"></i> View Projects
+                    <i class="fas fa-folder-open"></i> <span data-i18n="btn.viewProjects">View Projects</span>
                 </a>
                 <a href="pages/contact.html" class="btn btn-secondary btn-lg">
-                    <i class="fas fa-envelope"></i> Contact Me
+                    <i class="fas fa-envelope"></i> <span data-i18n="btn.contactMe">Contact Me</span>
                 </a>
-                <a href="#" class="btn btn-ghost btn-lg" id="downloadCV">
-                    <i class="fas fa-download"></i> Download CV
+                <a href="assets/cv/VoDaoHuyHoangCV.pdf" class="btn btn-ghost btn-lg" id="downloadCV" download="VoDaoHuyHoangCV.pdf">
+                    <i class="fas fa-download"></i> <span data-i18n="btn.downloadCV">Download CV</span>
                 </a>
             </div>
             
@@ -137,10 +140,10 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">
-                    <i class="fas fa-star"></i> Expertise
+                    <i class="fas fa-star"></i> <span data-i18n="expertise.badge">Expertise</span>
                 </span>
-                <h2 class="section-title">What I Do</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title" data-i18n="expertise.title">What I Do</h2>
+                <p class="section-subtitle" data-i18n="expertise.subtitle">
                     Chuyên môn chính trong lĩnh vực System, Network và Security Engineering
                 </p>
             </div>
@@ -152,12 +155,12 @@
                             <i class="fas fa-cloud"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">Hybrid Infrastructure</h3>
-                            <p class="card-subtitle">VMware + Cloud Services</p>
+                            <h3 class="card-title" data-i18n="card.hybrid.title">Hybrid Infrastructure</h3>
+                            <p class="card-subtitle" data-i18n="card.hybrid.subtitle">VMware + Cloud Services</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Thiết kế và triển khai hệ thống hybrid kết hợp On-Premise (VMware ESXi) với Cloud (Microsoft Entra ID, Intune, Autopilot).</p>
+                        <p data-i18n="card.hybrid.desc">Thiết kế và triển khai hệ thống hybrid kết hợp On-Premise (VMware ESXi) với Cloud (Microsoft Entra ID, Intune, Autopilot).</p>
                         <div class="tags mt-4">
                             <span class="tag">VMware</span>
                             <span class="tag">Microsoft Entra</span>
@@ -172,12 +175,12 @@
                             <i class="fas fa-robot"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">Automation</h3>
-                            <p class="card-subtitle">Ansible Infrastructure as Code</p>
+                            <h3 class="card-title" data-i18n="card.automation.title">Automation</h3>
+                            <p class="card-subtitle" data-i18n="card.automation.subtitle">Ansible Infrastructure as Code</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Tự động hóa triển khai và cấu hình hệ thống Linux/Windows Server với Ansible, đảm bảo consistency và giảm thời gian deployment.</p>
+                        <p data-i18n="card.automation.desc">Tự động hóa triển khai và cấu hình hệ thống Linux/Windows Server với Ansible, đảm bảo consistency và giảm thời gian deployment.</p>
                         <div class="tags mt-4">
                             <span class="tag tag-green">Ansible</span>
                             <span class="tag tag-green">Python</span>
@@ -192,12 +195,12 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">Security</h3>
-                            <p class="card-subtitle">SIEM, IDS & Compliance</p>
+                            <h3 class="card-title" data-i18n="card.security.title">Security</h3>
+                            <p class="card-subtitle" data-i18n="card.security.subtitle">SIEM, IDS & Compliance</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Triển khai các giải pháp bảo mật như Wazuh SIEM, Suricata IDS, OpenSCAP compliance checking và vulnerability scanning.</p>
+                        <p data-i18n="card.security.desc">Triển khai các giải pháp bảo mật như Wazuh SIEM, Suricata IDS, OpenSCAP compliance checking và vulnerability scanning.</p>
                         <div class="tags mt-4">
                             <span class="tag tag-red">Wazuh</span>
                             <span class="tag tag-red">Suricata</span>
@@ -212,12 +215,12 @@
                             <i class="fas fa-network-wired"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">Network</h3>
-                            <p class="card-subtitle">Cisco, Mikrotik, Palo Alto</p>
+                            <h3 class="card-title" data-i18n="card.network.title">Network</h3>
+                            <p class="card-subtitle" data-i18n="card.network.subtitle">Cisco, Mikrotik, Palo Alto</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Cấu hình và triển khai thiết bị mạng doanh nghiệp bao gồm Router, Switch L2/L3, Firewall với các protocol như VLAN, OSPF, ACL.</p>
+                        <p data-i18n="card.network.desc">Cấu hình và triển khai thiết bị mạng doanh nghiệp bao gồm Router, Switch L2/L3, Firewall với các protocol như VLAN, OSPF, ACL.</p>
                         <div class="tags mt-4">
                             <span class="tag tag-amber">Cisco</span>
                             <span class="tag tag-amber">Palo Alto</span>
@@ -232,12 +235,12 @@
                             <i class="fas fa-chart-line"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">Monitoring</h3>
-                            <p class="card-subtitle">Prometheus, Grafana, Zabbix</p>
+                            <h3 class="card-title" data-i18n="card.monitoring.title">Monitoring</h3>
+                            <p class="card-subtitle" data-i18n="card.monitoring.subtitle">Prometheus, Grafana, Zabbix</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Thiết lập hệ thống monitoring toàn diện với Prometheus metrics, Grafana dashboards và Zabbix alerting.</p>
+                        <p data-i18n="card.monitoring.desc">Thiết lập hệ thống monitoring toàn diện với Prometheus metrics, Grafana dashboards và Zabbix alerting.</p>
                         <div class="tags mt-4">
                             <span class="tag tag-purple">Prometheus</span>
                             <span class="tag tag-purple">Grafana</span>
@@ -252,12 +255,12 @@
                             <i class="fas fa-brain"></i>
                         </div>
                         <div>
-                            <h3 class="card-title">AI/ML</h3>
-                            <p class="card-subtitle">Computer Vision & Recognition</p>
+                            <h3 class="card-title" data-i18n="card.ai.title">AI/ML</h3>
+                            <p class="card-subtitle" data-i18n="card.ai.subtitle">Computer Vision & Recognition</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <p>Ứng dụng machine learning với TensorFlow, PyTorch và OpenCV cho các bài toán nhận diện đối tượng và xử lý ảnh.</p>
+                        <p data-i18n="card.ai.desc">Ứng dụng machine learning với TensorFlow, PyTorch và OpenCV cho các bài toán nhận diện đối tượng và xử lý ảnh.</p>
                         <div class="tags mt-4">
                             <span class="tag">YOLO</span>
                             <span class="tag">OpenCV</span>
@@ -274,10 +277,10 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">
-                    <i class="fas fa-rocket"></i> Portfolio
+                    <i class="fas fa-rocket"></i> <span data-i18n="projects.badge">Portfolio</span>
                 </span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title" data-i18n="projects.title">Featured Projects</h2>
+                <p class="section-subtitle" data-i18n="projects.subtitle">
                     Các dự án nổi bật thể hiện năng lực và kinh nghiệm thực tế
                 </p>
             </div>
@@ -292,7 +295,7 @@
                         <h3 class="project-title">
                             <a href="pages/project-detail.html?id=hybrid-enterprise">Hybrid Enterprise System</a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project.hybrid.desc">
                             Hệ thống Hybrid kết hợp VMware ESXi On-Prem với Microsoft Cloud, bao gồm HA, monitoring và security.
                         </p>
                         <div class="project-tech">
@@ -321,7 +324,7 @@
                         <h3 class="project-title">
                             <a href="pages/project-detail.html?id=ansible-automation">Ansible Automation</a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project.ansible.desc">
                             Hệ thống tự động hóa toàn diện cho Linux & Windows Server với Ansible roles và monitoring deployment.
                         </p>
                         <div class="project-tech">
@@ -349,7 +352,7 @@
                         <h3 class="project-title">
                             <a href="pages/project-detail.html?id=parking-ai">Parking LPR System</a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project.parking.desc">
                             Hệ thống quản lý bãi đỗ xe với nhận diện biển số realtime sử dụng YOLO + ONNX Runtime.
                         </p>
                         <div class="project-tech">
@@ -377,7 +380,7 @@
                         <h3 class="project-title">
                             <a href="pages/project-detail.html?id=car-esp32">ESP32 Remote Car</a>
                         </h3>
-                        <p class="project-description">
+                        <p class="project-description" data-i18n="project.car.desc">
                             Xe điều khiển 360 độ từ xa với ESP32, Wi-Fi/Bluetooth control qua Flutter mobile app.
                         </p>
                         <div class="project-tech">
@@ -399,7 +402,7 @@
             
             <div class="text-center mt-8">
                 <a href="pages/projects.html" class="btn btn-primary btn-lg">
-                    <i class="fas fa-th-large"></i> View All Projects
+                    <i class="fas fa-th-large"></i> <span data-i18n="btn.viewAll">View All Projects</span>
                 </a>
             </div>
         </div>
@@ -462,8 +465,8 @@
     <section class="section" style="background: var(--gradient-cyber);">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="section-subtitle mb-8">
+                <h2 class="section-title" data-i18n="cta.title">Let's Work Together</h2>
+                <p class="section-subtitle mb-8" data-i18n="cta.subtitle">
                     Tôi luôn sẵn sàng cho các cơ hội mới trong lĩnh vực System, Network và Security Engineering.
                 </p>
                 <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
@@ -489,7 +492,7 @@
                         </div>
                         <span class="logo-text">HyHonCuTe</span>
                     </a>
-                    <p>System / Network / Security Engineer. Đam mê xây dựng hệ thống ổn định, bảo mật và tự động hóa.</p>
+                    <p data-i18n="footer.brand.desc">System / Network / Security Engineer. Đam mê xây dựng hệ thống ổn định, bảo mật và tự động hóa.</p>
                     <div class="social-links" style="justify-content: flex-start;">
                         <a href="https://github.com/HyHonCuTe" target="_blank" class="social-btn">
                             <i class="fab fa-github"></i>
@@ -504,17 +507,17 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Navigation</h4>
+                    <h4 data-i18n="footer.navigation">Navigation</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About</a></li>
-                        <li><a href="pages/projects.html">Projects</a></li>
-                        <li><a href="pages/experience.html">Experience</a></li>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="pages/about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="pages/projects.html" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="pages/experience.html" data-i18n="nav.experience">Experience</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Projects</h4>
+                    <h4 data-i18n="footer.projects">Projects</h4>
                     <ul>
                         <li><a href="pages/project-detail.html?id=hybrid-enterprise">Hybrid Enterprise</a></li>
                         <li><a href="pages/project-detail.html?id=ansible-automation">Ansible Automation</a></li>
@@ -524,19 +527,19 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact">Contact</h4>
                     <ul>
                         <li><a href="mailto:vodaohuyhoang@gmail.com">Email</a></li>
                         <li><a href="tel:+84969913372">Phone</a></li>
                         <li><a href="https://github.com/HyHonCuTe" target="_blank">GitHub</a></li>
-                        <li><a href="pages/contact.html">Contact Form</a></li>
+                        <li><a href="pages/contact.html" data-i18n="footer.contactForm">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
-                <p>Made with <span style="color: var(--accent-red);">❤</span> using HTML, CSS & JavaScript</p>
+                <p data-i18n="footer.copyright">© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
+                <p><span data-i18n="footer.madeWith">Made with</span> <span style="color: var(--accent-red);">❤</span> using HTML, CSS & JavaScript</p>
             </div>
         </div>
     </footer>
@@ -548,5 +551,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/i18n.js"></script>
 </body>
 </html>

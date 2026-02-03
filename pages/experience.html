@@ -34,16 +34,19 @@
             </button>
             
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html" class="active">Experience</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="experience.html" class="active" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
             
             <div class="nav-actions">
+                <button class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -54,8 +57,8 @@
     <!-- Experience Hero -->
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title">Work Experience</h1>
-            <p class="page-subtitle">Hành trình phát triển sự nghiệp trong lĩnh vực IT Infrastructure & Support</p>
+            <h1 class="page-title" data-i18n="hero.title">Work Experience</h1>
+            <p class="page-subtitle" data-i18n="hero.subtitle">Hành trình phát triển sự nghiệp trong lĩnh vực IT Infrastructure & Support</p>
         </div>
     </section>
 
@@ -341,17 +344,17 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Navigation</h4>
+                    <h4 data-i18n="footer.navigation">Navigation</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact">Contact</h4>
                     <ul>
                         <li><a href="mailto:vodaohuyhoang@gmail.com">Email</a></li>
                         <li><a href="https://github.com/HyHonCuTe" target="_blank">GitHub</a></li>
@@ -361,7 +364,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -371,5 +374,6 @@
     </button>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
 </body>
 </html>

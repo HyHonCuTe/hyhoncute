@@ -237,10 +237,11 @@ body {
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: var(--space-4);
+    gap: var(--space-3);
 }
 
-.theme-toggle {
+.theme-toggle,
+.lang-toggle {
     width: 40px;
     height: 40px;
     background: var(--bg-card);
@@ -254,10 +255,22 @@ body {
     transition: all var(--transition-fast);
 }
 
-.theme-toggle:hover {
+.theme-toggle:hover,
+.lang-toggle:hover {
     background: var(--bg-card-hover);
     color: var(--accent-pink);
     border-color: var(--accent-pink);
+}
+
+.lang-toggle {
+    font-size: var(--text-xs);
+    font-weight: var(--font-bold);
+    font-family: var(--font-mono);
+}
+
+.lang-toggle .lang-text {
+    font-size: 11px;
+    letter-spacing: 0.5px;
 }
 
 .mobile-menu-btn {

@@ -34,16 +34,19 @@
             </button>
             
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
             </ul>
             
             <div class="nav-actions">
+                <button class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -54,8 +57,8 @@
     <!-- Contact Hero -->
     <section class="page-hero">
         <div class="container">
-            <h1 class="page-title">Get In Touch</h1>
-            <p class="page-subtitle">Hãy liên hệ với tôi nếu bạn có cơ hội việc làm, dự án hợp tác hoặc bất kỳ câu hỏi nào.</p>
+            <h1 class="page-title" data-i18n="hero.title">Get In Touch</h1>
+            <p class="page-subtitle" data-i18n="hero.subtitle">Hãy liên hệ với tôi nếu bạn có cơ hội việc làm, dự án hợp tác hoặc bất kỳ câu hỏi nào.</p>
         </div>
     </section>
 
@@ -65,8 +68,8 @@
             <div class="contact-layout">
                 <!-- Contact Info -->
                 <div class="contact-info-section">
-                    <h2>Contact Information</h2>
-                    <p>Tôi luôn sẵn sàng lắng nghe và thảo luận về các cơ hội mới. Đừng ngần ngại liên hệ!</p>
+                    <h2 data-i18n="info.title">Contact Information</h2>
+                    <p data-i18n="info.desc">Tôi luôn sẵn sàng lắng nghe và thảo luận về các cơ hội mới. Đừng ngần ngại liên hệ!</p>
                     
                     <div class="contact-methods">
                         <a href="mailto:vodaohuyhoang@gmail.com" class="contact-method-card">
@@ -74,7 +77,7 @@
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-method-info">
-                                <h4>Email</h4>
+                                <h4 data-i18n="info.email">Email</h4>
                                 <p>vodaohuyhoang@gmail.com</p>
                             </div>
                         </a>
@@ -84,7 +87,7 @@
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-method-info">
-                                <h4>Phone</h4>
+                                <h4 data-i18n="info.phone">Phone</h4>
                                 <p>+84 969 913 372</p>
                             </div>
                         </a>
@@ -104,14 +107,14 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-method-info">
-                                <h4>Location</h4>
+                                <h4 data-i18n="info.location">Location</h4>
                                 <p>Nguyễn Hoàng, P. Bình Trưng Tây, Q.2, TP. HCM</p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="social-links-section">
-                        <h4>Follow Me</h4>
+                        <h4 data-i18n="info.followMe">Follow Me</h4>
                         <div class="social-buttons">
                             <a href="https://github.com/HyHonCuTe" target="_blank" class="social-btn" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
@@ -129,49 +132,49 @@
                 <!-- Contact Form -->
                 <div class="contact-form-section">
                     <div class="card">
-                        <h2>Send a Message</h2>
-                        <p class="mb-6">Điền form bên dưới và tôi sẽ phản hồi sớm nhất có thể.</p>
+                        <h2 data-i18n="form.title">Send a Message</h2>
+                        <p class="mb-6" data-i18n="form.desc">Điền form bên dưới và tôi sẽ phản hồi sớm nhất có thể.</p>
                         
                         <form id="contactForm" class="contact-form">
                             <div class="form-group">
-                                <label for="name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn">
+                                <label for="name"><span data-i18n="form.name">Full Name</span> <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Nhập họ tên của bạn" data-i18n-placeholder="form.namePlaceholder">
                             </div>
                             
                             <div class="form-group">
-                                <label for="email">Email Address <span class="required">*</span></label>
+                                <label for="email"><span data-i18n="form.email">Email Address</span> <span class="required">*</span></label>
                                 <input type="email" id="email" name="email" required placeholder="example@email.com">
                             </div>
                             
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
+                                <label for="phone" data-i18n="form.phone">Phone Number</label>
                                 <input type="tel" id="phone" name="phone" placeholder="+84 xxx xxx xxx">
                             </div>
                             
                             <div class="form-group">
-                                <label for="subject">Subject <span class="required">*</span></label>
+                                <label for="subject"><span data-i18n="form.subject">Subject</span> <span class="required">*</span></label>
                                 <select id="subject" name="subject" required>
-                                    <option value="">-- Chọn chủ đề --</option>
-                                    <option value="job">Job Opportunity</option>
-                                    <option value="project">Project Collaboration</option>
-                                    <option value="consulting">Technical Consulting</option>
-                                    <option value="other">Other</option>
+                                    <option value="" data-i18n="form.subjectPlaceholder">-- Chọn chủ đề --</option>
+                                    <option value="job" data-i18n="form.subjectJob">Job Opportunity</option>
+                                    <option value="project" data-i18n="form.subjectProject">Project Collaboration</option>
+                                    <option value="consulting" data-i18n="form.subjectConsulting">Technical Consulting</option>
+                                    <option value="other" data-i18n="form.subjectOther">Other</option>
                                 </select>
                             </div>
                             
                             <div class="form-group">
-                                <label for="message">Message <span class="required">*</span></label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Nội dung tin nhắn..."></textarea>
+                                <label for="message"><span data-i18n="form.message">Message</span> <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Nội dung tin nhắn..." data-i18n-placeholder="form.messagePlaceholder"></textarea>
                             </div>
                             
                             <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                <i class="fas fa-paper-plane"></i> Send Message
+                                <i class="fas fa-paper-plane"></i> <span data-i18n="btn.sendMessage">Send Message</span>
                             </button>
                         </form>
                         
                         <div id="formSuccess" class="alert alert-success mt-4" style="display: none;">
                             <i class="fas fa-check-circle"></i>
-                            <span>Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.</span>
+                            <span data-i18n="form.success">Cảm ơn bạn đã liên hệ! Tôi sẽ phản hồi sớm nhất có thể.</span>
                         </div>
                     </div>
                 </div>
@@ -183,18 +186,18 @@
     <section class="section" style="background: var(--gradient-glow);">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Frequently Asked Questions</h2>
+                <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
             </div>
             
             <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
                 <div class="accordion">
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            <span>Bạn có sẵn sàng nhận việc remote không?</span>
+                            <span data-i18n="faq.q1">Bạn có sẵn sàng nhận việc remote không?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="accordion-content">
-                            <p>Có, tôi sẵn sàng làm việc remote hoặc hybrid. Với kinh nghiệm quản lý Azure Virtual Desktop và hỗ trợ từ xa, tôi có thể làm việc hiệu quả từ bất kỳ đâu.</p>
+                            <p data-i18n="faq.a1">Có, tôi sẵn sàng làm việc remote hoặc hybrid. Với kinh nghiệm quản lý Azure Virtual Desktop và hỗ trợ từ xa, tôi có thể làm việc hiệu quả từ bất kỳ đâu.</p>
                         </div>
                     </div>
                     
@@ -273,17 +276,17 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Navigation</h4>
+                    <h4 data-i18n="footer.navigation">Navigation</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact">Contact</h4>
                     <ul>
                         <li><a href="mailto:vodaohuyhoang@gmail.com">Email</a></li>
                         <li><a href="https://github.com/HyHonCuTe" target="_blank">GitHub</a></li>
@@ -293,7 +296,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -303,6 +306,7 @@
     </button>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
     <script>
         // Form submission handler - Opens email client with pre-filled content
         document.getElementById('contactForm').addEventListener('submit', function(e) {

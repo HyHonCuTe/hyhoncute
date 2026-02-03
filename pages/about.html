@@ -36,16 +36,19 @@
             </button>
             
             <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="roadmap.html">Roadmap</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+                <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+                <li><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+                <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+                <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
             </ul>
             
             <div class="nav-actions">
+                <button class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
                 <button class="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -57,9 +60,9 @@
     <section class="about-hero">
         <div class="container">
             <div class="breadcrumb">
-                <a href="../index.html">Home</a>
+                <a href="../index.html" data-i18n="breadcrumb.home">Home</a>
                 <span>/</span>
-                <span class="current">About</span>
+                <span class="current" data-i18n="breadcrumb.current">About</span>
             </div>
             
             <div class="about-profile">
@@ -69,8 +72,8 @@
                 
                 <div class="about-info">
                     <h1>Võ Đào Huy Hoàng</h1>
-                    <p class="title">System / Network / Security Engineer</p>
-                    <p class="summary">
+                    <p class="title" data-i18n="profile.title">System / Network / Security Engineer</p>
+                    <p class="summary" data-i18n="profile.summary">
                         Sinh viên ngành An ninh mạng, định hướng phát triển thành System / Network / Security Engineer. 
                         Có kinh nghiệm triển khai Hybrid Infrastructure (On-Prem + Cloud), Automation với Ansible, 
                         Endpoint Management (Intune, Autopilot) và Network Security. Mong muốn làm việc trong môi trường 
@@ -102,10 +105,10 @@
                     
                     <div class="flex gap-4 mt-8" style="flex-wrap: wrap;">
                         <a href="../assets/cv/VoDaoHuyHoangCV.pdf" class="btn btn-primary" id="downloadCV" download="VoDaoHuyHoangCV.pdf">
-                            <i class="fas fa-download"></i> Download CV
+                            <i class="fas fa-download"></i> <span data-i18n="btn.downloadCV">Download CV</span>
                         </a>
                         <a href="contact.html" class="btn btn-secondary">
-                            <i class="fas fa-envelope"></i> Contact Me
+                            <i class="fas fa-envelope"></i> <span data-i18n="btn.contactMe">Contact Me</span>
                         </a>
                     </div>
                 </div>
@@ -118,16 +121,16 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">
-                    <i class="fas fa-graduation-cap"></i> Education
+                    <i class="fas fa-graduation-cap"></i> <span data-i18n="education.badge">Education</span>
                 </span>
-                <h2 class="section-title">Học vấn</h2>
+                <h2 class="section-title" data-i18n="education.title">Học vấn</h2>
             </div>
             
             <div class="education-card">
                 <div class="education-header">
                     <div>
-                        <h3 class="education-school">Đại học Công nghệ TP.HCM (HUTECH)</h3>
-                        <p class="education-degree">Cử nhân An ninh mạng - Ngành Công nghệ thông tin</p>
+                        <h3 class="education-school" data-i18n="education.school">Đại học Công nghệ TP.HCM (HUTECH)</h3>
+                        <p class="education-degree" data-i18n="education.degree">Cử nhân An ninh mạng - Ngành Công nghệ thông tin</p>
                     </div>
                     <div class="education-period">
                         <i class="fas fa-calendar"></i>
@@ -142,11 +145,11 @@
                     </div>
                     <div class="edu-stat">
                         <div class="edu-stat-value" style="color: var(--accent-amber);">⭐</div>
-                        <div class="edu-stat-label">Sinh viên tiêu biểu</div>
+                        <div class="edu-stat-label" data-i18n="education.outstanding">Sinh viên tiêu biểu</div>
                     </div>
                     <div class="edu-stat">
                         <div class="edu-stat-value">2026</div>
-                        <div class="edu-stat-label">Dự kiến tốt nghiệp</div>
+                        <div class="edu-stat-label" data-i18n="education.expected">Dự kiến tốt nghiệp</div>
                     </div>
                 </div>
                 
@@ -162,9 +165,9 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">
-                    <i class="fas fa-tools"></i> Skills
+                    <i class="fas fa-tools"></i> <span data-i18n="skills.badge">Skills</span>
                 </span>
-                <h2 class="section-title">Kỹ năng</h2>
+                <h2 class="section-title" data-i18n="skills.title">Kỹ năng</h2>
             </div>
             
             <!-- Programming -->
@@ -391,28 +394,28 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Navigation</h4>
+                    <h4 data-i18n="footer.navigation">Navigation</h4>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+                        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+                        <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer.contact">Contact</h4>
                     <ul>
                         <li><a href="mailto:vodaohuyhoang@gmail.com">Email</a></li>
                         <li><a href="tel:+84969913372">Phone</a></li>
                         <li><a href="https://github.com/HyHonCuTe" target="_blank">GitHub</a></li>
-                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="contact.html" data-i18n="footer.contactForm">Contact Form</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
+                <p data-i18n="footer.copyright">© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -422,5 +425,6 @@
     </button>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/i18n.js"></script>
 </body>
 </html>
