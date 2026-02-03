@@ -1,0 +1,187 @@
+{
+    "personal": {
+        "name": "Võ Đào Huy Hoàng",
+        "nickname": "HyHonCuTe",
+        "title": "System / Network / Security Engineer",
+        "email": "vodaohuyhoang@gmail.com",
+        "phone": "0969 913 372",
+        "phoneIntl": "+84 969 913 372",
+        "address": "Nguyễn Hoàng, P. Bình Trưng, TP. Hồ Chí Minh",
+        "dob": "02/04/2004",
+        "avatar": "https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-1/287716288_1493364071082242_7615443866586884756_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Zd0xxJQ03I0Q7kNvwE7VY4c&_nc_oc=AdlBBQCOZAks_i3hcEEaHemBD_NqERFmcCjsObSmO9VSWdm2A8BRChPqaqem4v1eeqU&_nc_zt=24&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=WmGFwQvArWEt59Nz2yDaSQ&oh=00_Afi-nQBCbhxK6w142MCb7inzeqrk-iLkKgIPcqIJcg-Xxg&oe=690D6128",
+        "github": "https://github.com/HyHonCuTe",
+        "linkedin": "https://linkedin.com/in/hyhoncute",
+        "telegram": "https://t.me/hyhoncute"
+    },
+    "summary": {
+        "vi": "Sinh viên ngành An ninh mạng, định hướng phát triển thành System / Network / Security Engineer. Có kinh nghiệm triển khai Hybrid Infrastructure (On-Prem + Cloud), Automation với Ansible, Endpoint Management (Intune, Autopilot) và Network Security. Mong muốn làm việc trong môi trường doanh nghiệp để triển khai, vận hành và tối ưu hệ thống ổn định – bảo mật – tự động hóa cao.",
+        "en": "Cybersecurity student aiming to become a System / Network / Security Engineer. Experienced in deploying Hybrid Infrastructure (On-Prem + Cloud), Automation with Ansible, Endpoint Management (Intune, Autopilot), and Network Security. Seeking to work in enterprise environments to deploy, operate, and optimize stable – secure – highly automated systems."
+    },
+    "highlights": [
+        "Hybrid Infra (VMware + Microsoft Entra/Intune)",
+        "Automation: Ansible (Linux/Windows)",
+        "Monitoring: Prometheus/Grafana/Zabbix",
+        "Security: Wazuh SIEM, Suricata IDS, OpenVAS, OpenSCAP",
+        "Network: Cisco/Mikrotik, Palo Alto"
+    ],
+    "education": [
+        {
+            "school": "Đại học Công nghệ TP.HCM (HUTECH)",
+            "degree": "Cử nhân An ninh mạng",
+            "field": "Công nghệ thông tin",
+            "period": "08/2022 – 06/2026",
+            "gpa": "3.67",
+            "achievements": [
+                "Sinh viên tiêu biểu tất cả các năm học"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Giải Nhì",
+            "event": "Tìm kiếm tài năng CNTT 2025 – Lần thứ 10",
+            "year": "2025",
+            "icon": "fa-medal"
+        },
+        {
+            "title": "Giải Nhì",
+            "event": "Hackathon AI & Blockchain Pione Dream 2025",
+            "year": "2025",
+            "icon": "fa-trophy"
+        },
+        {
+            "title": "Giải Nhì",
+            "event": "Thiết kế xe HUTECH Clash Race – 2025",
+            "year": "2025",
+            "icon": "fa-car"
+        },
+        {
+            "title": "Học bổng",
+            "event": "HUTECH IT OPEN DAY – 2025",
+            "year": "2025",
+            "icon": "fa-award"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Công Ty Cổ Phần Đầu Tư KTTM Nam Trung",
+            "position": "Nhân viên Kỹ thuật IT",
+            "period": "08/2025 – 12/2025",
+            "tasks": [
+                "Cài đặt, bảo trì và nâng cấp máy tính, phần mềm và hệ điều hành",
+                "Hỗ trợ người dùng xử lý sự cố phần cứng, phần mềm, mạng, thiết bị ngoại vi",
+                "Tham gia triển khai dự án CNTT: nâng cấp hệ thống, triển khai phần mềm mới",
+                "Phát triển Web Dashboard quản lý màn hình quảng cáo (ASP.NET Core 9.0 + Flutter app)"
+            ],
+            "tech": ["ASP.NET Core", "Flutter", "IT Support"]
+        },
+        {
+            "company": "Công ty Cổ Phần Công Nghệ Liên Phát",
+            "position": "Thực tập sinh - Network & Security",
+            "period": "05/2025 – 08/2025",
+            "tasks": [
+                "Cấu hình và triển khai thiết bị mạng Cisco (Router, Switch L2/L3), Firewall (PaloAlto) theo thiết kế",
+                "Cấu hình VLAN, ACL, OSPF, NAT, DHCP, port security",
+                "Tham gia dự án triển khai mạng doanh nghiệp: khảo sát, lắp đặt, kiểm thử, bàn giao",
+                "Viết Ansible Playbook tự động hóa cấu hình thiết bị mạng"
+            ],
+            "tech": ["Cisco", "Palo Alto", "Ansible", "VLAN", "OSPF"]
+        }
+    ],
+    "certifications": [
+        {
+            "name": "CCNA Course Completion",
+            "issuer": "VNPRO",
+            "icon": "fa-certificate"
+        }
+    ],
+    "skills": {
+        "programming": {
+            "title": "Programming",
+            "icon": "fa-code",
+            "items": [
+                { "name": "Python", "icon": "fab fa-python", "class": "python" },
+                { "name": "C#", "icon": "fas fa-hashtag", "class": "csharp" },
+                { "name": "Java", "icon": "fab fa-java", "class": "java" },
+                { "name": "C/C++", "icon": "fas fa-microchip", "class": "cpp" },
+                { "name": "PHP", "icon": "fab fa-php", "class": "php" },
+                { "name": "HTML/CSS", "icon": "fab fa-html5", "class": "html" },
+                { "name": "JavaScript", "icon": "fab fa-js", "class": "js" },
+                { "name": "Dart/Flutter", "icon": "fas fa-mobile-alt", "class": "dart" },
+                { "name": "SQL", "icon": "fas fa-database", "class": "sql" }
+            ]
+        },
+        "ai_ml": {
+            "title": "Machine Learning & AI",
+            "icon": "fa-brain",
+            "items": [
+                { "name": "TensorFlow", "icon": "fas fa-project-diagram" },
+                { "name": "PyTorch", "icon": "fas fa-fire" },
+                { "name": "OpenCV", "icon": "fas fa-eye" },
+                { "name": "NumPy", "icon": "fas fa-calculator" }
+            ]
+        },
+        "systems": {
+            "title": "Systems & Cloud",
+            "icon": "fa-server",
+            "items": [
+                { "name": "Windows Server", "icon": "fab fa-windows", "class": "windows" },
+                { "name": "Linux", "icon": "fab fa-linux", "class": "linux" },
+                { "name": "AD/DNS/DHCP", "icon": "fas fa-sitemap" },
+                { "name": "IIS/Apache/Nginx", "icon": "fas fa-globe" },
+                { "name": "SQL Server HA", "icon": "fas fa-database" },
+                { "name": "AWS Basic", "icon": "fab fa-aws", "class": "aws" }
+            ]
+        },
+        "network": {
+            "title": "Network & Security",
+            "icon": "fa-network-wired",
+            "items": [
+                { "name": "Cisco", "icon": "fas fa-network-wired", "class": "cisco" },
+                { "name": "Mikrotik", "icon": "fas fa-wifi" },
+                { "name": "Palo Alto", "icon": "fas fa-shield-alt" },
+                { "name": "VLAN/ACL/OSPF", "icon": "fas fa-project-diagram" },
+                { "name": "NAT/DHCP", "icon": "fas fa-exchange-alt" },
+                { "name": "Port Security", "icon": "fas fa-lock" }
+            ]
+        },
+        "automation": {
+            "title": "Automation & DevOps",
+            "icon": "fa-robot",
+            "items": [
+                { "name": "Ansible", "icon": "fas fa-robot", "class": "ansible" },
+                { "name": "Docker", "icon": "fab fa-docker", "class": "docker" },
+                { "name": "Git", "icon": "fab fa-git-alt" }
+            ]
+        },
+        "monitoring": {
+            "title": "Monitoring & Security Tools",
+            "icon": "fa-chart-line",
+            "items": [
+                { "name": "Zabbix", "icon": "fas fa-chart-area" },
+                { "name": "Prometheus", "icon": "fas fa-fire" },
+                { "name": "Grafana", "icon": "fas fa-chart-bar" },
+                { "name": "Wazuh SIEM", "icon": "fas fa-shield-virus" },
+                { "name": "Suricata IDS", "icon": "fas fa-bug" },
+                { "name": "OpenSCAP", "icon": "fas fa-clipboard-check" },
+                { "name": "OpenVAS", "icon": "fas fa-search" }
+            ]
+        },
+        "soft": {
+            "title": "Soft Skills",
+            "icon": "fa-users",
+            "items": [
+                { "name": "Làm việc nhóm", "icon": "fas fa-users" },
+                { "name": "Giao tiếp", "icon": "fas fa-comments" },
+                { "name": "Quản lý thời gian", "icon": "fas fa-clock" },
+                { "name": "Lãnh đạo", "icon": "fas fa-user-tie" }
+            ]
+        }
+    },
+    "stats": {
+        "projects": "10+",
+        "experience": "1+",
+        "gpa": "3.67",
+        "awards": "4"
+    }
+}

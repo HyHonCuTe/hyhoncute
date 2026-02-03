@@ -1,0 +1,218 @@
+{
+    "projects": [
+        {
+            "id": "hybrid-enterprise",
+            "title": "Hybrid Enterprise System",
+            "subtitle": "Cloud & On-Prem Infrastructure",
+            "icon": "fa-cloud",
+            "description": "Thiết kế và triển khai hệ thống Hybrid cho môi trường doanh nghiệp mô phỏng, kết hợp VMware ESXi On-Premise với Microsoft Cloud Services.",
+            "categories": ["infrastructure", "security", "automation"],
+            "featured": true,
+            "tech": ["VMware ESXi", "Microsoft Entra ID", "Intune", "Ansible", "HAProxy", "Prometheus", "Grafana", "Suricata IDS", "Commvault"],
+            "github": null,
+            "demo": "https://drive.google.com/drive/folders/1ujwXJcO-7o-ZlCW6aQzrvIX_gPLbQ1BQ?usp=sharing",
+            "details": {
+                "problem": "Doanh nghiệp cần một hệ thống hybrid kết hợp infrastructure on-premise với cloud services, đảm bảo high availability, security monitoring và automated deployment.",
+                "scope": [
+                    "On-Prem (VMware ESXi): AD DS, DNS, HAProxy, Backend, Monitoring, Security",
+                    "Cloud: Microsoft Entra ID, Intune, Windows Autopilot",
+                    "Automation: Ansible triển khai & cấu hình dịch vụ",
+                    "High Availability: HAProxy Active/Standby, Backend Web & SQL Server",
+                    "Monitoring & Security: Prometheus, Grafana, Suricata IDS",
+                    "Backup: Commvault"
+                ],
+                "architecture": [
+                    "VMware ESXi cluster với multiple VMs",
+                    "Active Directory Domain Services cho identity management",
+                    "HAProxy load balancer với failover configuration",
+                    "Prometheus + Grafana cho metrics và visualization",
+                    "Suricata IDS cho network threat detection",
+                    "Microsoft Entra ID integration cho hybrid identity",
+                    "Intune + Autopilot cho endpoint management"
+                ],
+                "results": [
+                    "Hệ thống hoạt động ổn định với 99.9% uptime",
+                    "Automated deployment giảm 70% thời gian triển khai",
+                    "Real-time monitoring và alerting",
+                    "Centralized identity management"
+                ]
+            }
+        },
+        {
+            "id": "ansible-automation",
+            "title": "Ansible Automation",
+            "subtitle": "Infrastructure as Code cho Linux/Windows",
+            "icon": "fa-robot",
+            "description": "Xây dựng hệ thống tự động hóa toàn diện cho Linux & Windows Server với Ansible, bao gồm configuration management, security hardening và monitoring deployment.",
+            "categories": ["automation", "devops", "security"],
+            "featured": true,
+            "tech": ["Ansible", "Python", "Jinja2", "YAML", "SSH", "WinRM", "Prometheus", "Grafana", "Zabbix", "Wazuh"],
+            "github": "https://github.com/HyHonCuTe/ansible",
+            "demo": null,
+            "details": {
+                "problem": "Manual server configuration tốn nhiều thời gian, dễ sai sót và khó maintain consistency across multiple servers.",
+                "scope": [
+                    "SSH & WinRM connection management",
+                    "AD, DNS, Firewall configuration",
+                    "IIS, Web Server deployment",
+                    "Backup & SQL Server management",
+                    "System patching automation"
+                ],
+                "features": [
+                    "Modular roles structure cho reusability",
+                    "Idempotent playbooks đảm bảo consistency",
+                    "Vault integration cho secrets management",
+                    "Dynamic inventory support",
+                    "Monitoring agents deployment (Prometheus, Zabbix)",
+                    "Security tools installation (Wazuh, OpenSCAP, OpenVAS)"
+                ],
+                "results": [
+                    "90% reduction trong deployment time",
+                    "100% configuration consistency",
+                    "Automated security compliance checking",
+                    "Centralized monitoring deployment"
+                ]
+            }
+        },
+        {
+            "id": "parking-ai",
+            "title": "Parking LPR System",
+            "subtitle": "AI License Plate Recognition",
+            "icon": "fa-parking",
+            "description": "Hệ thống quản lý bãi đỗ xe với tính năng nhận diện biển số realtime sử dụng YOLO + ONNX Runtime + OpenCV.",
+            "categories": ["ai", "iot", "fullstack"],
+            "featured": true,
+            "tech": [".NET Framework", "WinForms", "YOLO", "ONNX Runtime", "OpenCvSharp", "SQL Server", "NFC"],
+            "github": "https://github.com/HyHonCuTe/Parking",
+            "demo": null,
+            "details": {
+                "problem": "Bãi đỗ xe cần tự động hóa quy trình check-in/check-out, giảm thời gian chờ và tăng độ chính xác trong quản lý.",
+                "features": [
+                    "Windows Forms Application với modern UI",
+                    "Realtime License Plate Recognition với YOLO model",
+                    "ONNX Runtime cho optimized inference",
+                    "OpenCV integration cho image processing",
+                    "NFC card management",
+                    "Vehicle-card association",
+                    "SQL Server database"
+                ],
+                "architecture": [
+                    "Camera capture → Image preprocessing",
+                    "YOLO detection → Plate localization",
+                    "OCR processing → Character recognition",
+                    "Database lookup → Vehicle verification",
+                    "Gate control → Access management"
+                ],
+                "results": [
+                    "95%+ accuracy trong điều kiện ánh sáng tốt",
+                    "< 2 giây processing time per vehicle",
+                    "Automated check-in/check-out",
+                    "Comprehensive reporting system"
+                ]
+            }
+        },
+        {
+            "id": "car-esp32",
+            "title": "ESP32 Remote Car",
+            "subtitle": "IoT Controlled Vehicle",
+            "icon": "fa-car",
+            "description": "Xe điều khiển 360 độ từ xa với ESP32, hỗ trợ Wi-Fi và Bluetooth control thông qua Flutter mobile app.",
+            "categories": ["iot", "mobile", "embedded"],
+            "featured": true,
+            "tech": ["ESP32", "Arduino IDE", "WebSocket", "PWM", "Flutter", "Dart", "Bluetooth"],
+            "github": "https://github.com/HyHonCuTe/Car_esp32",
+            "demo": null,
+            "details": {
+                "problem": "Tạo một platform để học và thực hành IoT, embedded programming, và mobile app development.",
+                "features": [
+                    "360-degree movement control",
+                    "Wi-Fi based control",
+                    "Bluetooth connectivity",
+                    "Flutter mobile app",
+                    "Real-time communication via WebSocket",
+                    "PWM motor control",
+                    "Multiple sensor integration"
+                ],
+                "architecture": [
+                    "ESP32 microcontroller as brain",
+                    "H-Bridge motor driver for DC motors",
+                    "WebSocket server for real-time control",
+                    "Flutter app with joystick UI",
+                    "Sensor modules for obstacle detection"
+                ],
+                "results": [
+                    "Smooth 360-degree control",
+                    "Low latency communication",
+                    "Cross-platform mobile app",
+                    "Modular and extensible design"
+                ]
+            }
+        },
+        {
+            "id": "ansible-cisco",
+            "title": "Ansible Cisco Automation",
+            "subtitle": "Network Device Configuration",
+            "icon": "fa-network-wired",
+            "description": "Tự động hóa cấu hình thiết bị mạng Cisco với Ansible, sử dụng Jinja templates cho configuration management.",
+            "categories": ["automation", "network"],
+            "featured": false,
+            "tech": ["Ansible", "Jinja2", "Cisco IOS", "YAML"],
+            "github": "https://github.com/HyHonCuTe/ansible-cisco",
+            "demo": null,
+            "details": {
+                "features": [
+                    "Jinja templates cho flexible configuration",
+                    "Multi-device deployment",
+                    "Configuration backup automation",
+                    "VLAN, ACL, routing configuration"
+                ]
+            }
+        },
+        {
+            "id": "standee",
+            "title": "Standee E-commerce",
+            "subtitle": "Full-stack Platform",
+            "icon": "fa-shopping-cart",
+            "description": "E-commerce platform cho sản phẩm standee với web frontend, mobile app và backend API.",
+            "categories": ["fullstack", "mobile"],
+            "featured": false,
+            "tech": ["HTML/CSS/JS", "C#", "Dart", "Flutter", "ASP.NET"],
+            "github": "https://github.com/HyHonCuTe/Standee",
+            "demo": null
+        },
+        {
+            "id": "flash-esp",
+            "title": "Flash ESP Tool",
+            "subtitle": "Web-based Firmware Flasher",
+            "icon": "fa-microchip",
+            "description": "Web-based interface để flash firmware lên ESP32/ESP8266 devices thông qua trình duyệt.",
+            "categories": ["iot", "tools"],
+            "featured": false,
+            "tech": ["HTML", "JavaScript", "CSS", "Web Serial API"],
+            "github": "https://github.com/HyHonCuTe/flash_esp",
+            "demo": null
+        },
+        {
+            "id": "tutorial-ansible",
+            "title": "Ansible Tutorial",
+            "subtitle": "Documentation & Guides",
+            "icon": "fa-book",
+            "description": "Tutorial documentation cho đồ án chuyên ngành về Ansible automation.",
+            "categories": ["documentation"],
+            "featured": false,
+            "tech": ["HTML", "Markdown"],
+            "github": "https://github.com/HyHonCuTe/tutorial_ansible",
+            "demo": null
+        }
+    ],
+    "categories": [
+        { "id": "all", "name": "All Projects", "icon": "fa-th-large" },
+        { "id": "infrastructure", "name": "Infrastructure", "icon": "fa-server" },
+        { "id": "automation", "name": "Automation", "icon": "fa-robot" },
+        { "id": "security", "name": "Security", "icon": "fa-shield-alt" },
+        { "id": "ai", "name": "AI/ML", "icon": "fa-brain" },
+        { "id": "iot", "name": "IoT", "icon": "fa-microchip" },
+        { "id": "fullstack", "name": "Full-stack", "icon": "fa-layer-group" },
+        { "id": "network", "name": "Network", "icon": "fa-network-wired" }
+    ]
+}
