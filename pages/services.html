@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services - Dịch vụ IT & Sản phẩm của Võ Đào Huy Hoàng">
+    <title>Services | Võ Đào Huy Hoàng</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../assets/css/variables.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+</head>
+<body>
+    <div class="cyber-bg">
+        <div class="cyber-grid"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon"><i class="fas fa-terminal"></i></div>
+                <span class="logo-text">HyHonCuTe</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Services & Products</h1>
+            <p class="page-subtitle">Dịch vụ IT chuyên nghiệp và sản phẩm công nghệ</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-cogs"></i> Services</span>
+                <h2 class="section-title">Dịch Vụ IT</h2>
+                <p class="section-subtitle">Các dịch vụ IT mà tôi có thể hỗ trợ bạn</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Thiết Kế & Triển Khai Network</h3>
+                    <p>Thiết kế, cấu hình và triển khai hệ thống mạng cho doanh nghiệp nhỏ và vừa. Bao gồm Router, Switch, Firewall, VPN.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Thiết kế topology mạng</li>
+                        <li><i class="fas fa-check"></i> Cấu hình Router/Switch Cisco, MikroTik</li>
+                        <li><i class="fas fa-check"></i> Setup VPN Site-to-Site / Remote Access</li>
+                        <li><i class="fas fa-check"></i> Cấu hình VLAN, ACL, NAT</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Cài Đặt & Quản Lý Server</h3>
+                    <p>Cài đặt, cấu hình và quản lý Windows Server, Linux Server cho doanh nghiệp hoặc cá nhân.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Setup Active Directory, DNS, DHCP</li>
+                        <li><i class="fas fa-check"></i> Cấu hình File Server, Print Server</li>
+                        <li><i class="fas fa-check"></i> Linux Server (Ubuntu, CentOS, Debian)</li>
+                        <li><i class="fas fa-check"></i> Backup & Disaster Recovery</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card featured">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automation & Scripting</h3>
+                    <p>Tự động hóa các tác vụ IT lặp đi lặp lại bằng Ansible, PowerShell, Python giúp tiết kiệm thời gian.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Ansible Playbooks tùy chỉnh</li>
+                        <li><i class="fas fa-check"></i> PowerShell Scripts cho Windows</li>
+                        <li><i class="fas fa-check"></i> Python Scripts cho Linux</li>
+                        <li><i class="fas fa-check"></i> Automated Backup Solutions</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Assessment</h3>
+                    <p>Đánh giá bảo mật cơ bản cho hệ thống mạng và server của doanh nghiệp.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Network Security Audit</li>
+                        <li><i class="fas fa-check"></i> Vulnerability Scanning</li>
+                        <li><i class="fas fa-check"></i> Security Policy Review</li>
+                        <li><i class="fas fa-check"></i> Báo cáo và khuyến nghị</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Setup & Migration</h3>
+                    <p>Hỗ trợ triển khai và di chuyển hệ thống lên Azure Cloud.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Azure Virtual Machines</li>
+                        <li><i class="fas fa-check"></i> Azure Virtual Desktop</li>
+                        <li><i class="fas fa-check"></i> Microsoft 365 Setup</li>
+                        <li><i class="fas fa-check"></i> Hybrid Cloud Configuration</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT Support & Consulting</h3>
+                    <p>Hỗ trợ kỹ thuật và tư vấn giải pháp IT cho cá nhân và doanh nghiệp.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Remote Support</li>
+                        <li><i class="fas fa-check"></i> Troubleshooting hệ thống</li>
+                        <li><i class="fas fa-check"></i> Tư vấn giải pháp IT</li>
+                        <li><i class="fas fa-check"></i> Training cơ bản</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-label">Từ</span>
+                        <span class="price-value">Liên hệ</span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Liên Hệ Báo Giá
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" style="background: var(--gradient-glow);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-box"></i> Products</span>
+                <h2 class="section-title">Sản Phẩm & Templates</h2>
+                <p class="section-subtitle">Các sản phẩm số và templates sẵn sàng sử dụng</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-file-code"></i>
+                        <span class="product-tag">Coming Soon</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Ansible Playbook Collection</h3>
+                        <p>Bộ sưu tập Ansible playbooks cho việc triển khai và cấu hình hệ thống.</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-code-branch"></i> 20+ Playbooks</span>
+                            <span><i class="fas fa-file-alt"></i> Documentation</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old"></span>
+                            <span class="price-current">Sắp ra mắt</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-terminal"></i>
+                        <span class="product-tag">Coming Soon</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>PowerShell Script Library</h3>
+                        <p>Thư viện PowerShell scripts cho Windows Administration.</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-code-branch"></i> 50+ Scripts</span>
+                            <span><i class="fas fa-file-alt"></i> Well Documented</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old"></span>
+                            <span class="price-current">Sắp ra mắt</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <i class="fas fa-network-wired"></i>
+                        <span class="product-tag">Coming Soon</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Network Topology Templates</h3>
+                        <p>Bộ templates thiết kế mạng cho các quy mô khác nhau.</p>
+                        <div class="product-meta">
+                            <span><i class="fas fa-code-branch"></i> 10+ Templates</span>
+                            <span><i class="fas fa-file-alt"></i> Editable</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-old"></span>
+                            <span class="price-current">Sắp ra mắt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Order -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge"><i class="fas fa-shopping-cart"></i> Order</span>
+                <h2 class="section-title">Cách Đặt Hàng</h2>
+            </div>
+            
+            <div class="order-steps">
+                <div class="order-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Liên Hệ</h4>
+                        <p>Gửi email hoặc điền form liên hệ mô tả yêu cầu của bạn</p>
+                    </div>
+                </div>
+                
+                <div class="order-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Tư Vấn</h4>
+                        <p>Tôi sẽ liên hệ lại để hiểu rõ nhu cầu và đề xuất giải pháp</p>
+                    </div>
+                </div>
+                
+                <div class="order-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Báo Giá</h4>
+                        <p>Gửi báo giá chi tiết dựa trên phạm vi công việc</p>
+                    </div>
+                </div>
+                
+                <div class="order-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Thực Hiện</h4>
+                        <p>Sau khi thống nhất, tôi sẽ bắt đầu thực hiện công việc</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <h3>Bạn có dự án cần hỗ trợ?</h3>
+                <p>Hãy liên hệ ngay để được tư vấn miễn phí!</p>
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i> Liên Hệ Ngay
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-icon"><i class="fas fa-terminal"></i></div>
+                        <span class="logo-text">HyHonCuTe</span>
+                    </a>
+                    <p>System / Network / Security Engineer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:vodaohuyhoang@gmail.com">Email</a></li>
+                        <li><a href="https://github.com/HyHonCuTe" target="_blank">GitHub</a></li>
+                        <li><a href="tel:+84969913372">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Võ Đào Huy Hoàng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
